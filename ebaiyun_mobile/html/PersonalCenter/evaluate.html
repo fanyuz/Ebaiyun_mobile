@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>评价</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/imgUp.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.raty.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="评价">评价</h4>
+				<div class="bro-title">
+					<a href="javascript:;">提交</a>
+				</div>
+			</div>
+		</div>
+		<!--评价-->
+		<div class="m-t-30">
+			<form action="">
+				<div class="eval">
+					<!--商品评价-->
+					<div class="eval-a clearfix">
+						<div class="eval-l fl">
+							<img src="../../img/20170613174501sd.png" alt="" />
+						</div>
+						<div class="eval-r fl">
+							<p>商品描述</p>
+							<div class="clearfix lin-h-30">
+								<div id="star" class="target-demo fl"></div>
+						    	<div id="result" class="hint fl"></div>
+							</div>
+						</div>
+					</div>
+					<!--描述-->
+					<div class="eval-b">
+						<div class="uate-list">
+							<textarea name="" rows="" cols="" placeholder="分享你的购物心得" id="TextArea1" onkeyup="words_deal()"></textarea>
+							<p><b class="textCount">500</b>字</p>
+						</div>
+					</div>
+					<div class="img-box full">
+						<section class=" img-section">
+							<div class="z_photo upimg-div clearfix" >
+								 <section class="z_file fl">
+									<img src="../../img/imgadd.png" class="add-img">
+									<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+								 </section>
+							 </div>
+						 </section>
+					</div>
+					<!--确认-->
+					<div class="ogo-bg-colse works-mask">
+						<div class="ogo-bg-oga">
+							<h4>确认删除？</h4>
+							<div class="ogo-zzz">
+								<a href="javascript:;" class="quxiao">取消</a>
+								<a href="javascript:;" class="close-bt">删除</a>
+							</div>
+						</div>
+					</div>
+					<div class="m-t-18">
+						<div class="itme-box">
+							<div class="itme-box-ogo itme-pos clearfix">
+								<span class="itme-shangbiao"></span>
+								<a href="javascript:;" class="itme-dp">
+									<span class="shop-name">夜行狼旗舰店</span>
+									<span class="icon-point"></span>
+								</a>
+							</div>
+							<div style="padding: 1.2rem 0 1rem 0;">
+								<div class="eval-lisbox">							
+									<div class="clearfix lin-h-30">
+										<p class="fl">服务态度</p>
+										<div id="star1" class="target-demo fl"></div>
+								    	<div id="result1" class="hint fl"></div>
+									</div>
+								</div>
+								<div class="eval-lisbox">							
+									<div class="clearfix lin-h-30">
+										<p class="fl">物流服务</p>
+										<div id="star2" class="target-demo fl"></div>
+								    	<div id="result2" class="hint fl"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			rat('star','result',1);
+			rat('star1','result1',1);
+			rat('star2','result2',1);
+			function rat(star,result,m){
+				star= '#' + star;
+				result= '#' + result;
+				$(star).raty({
+				  	number: 5,//多少个星星设置		
+					targetType: 'hint',//类型选择，number是数字值，hint，是设置的数组值
+			        path      : '../../img',
+					hints     : ['非常不满意','不满意','一般','满意','非常满意'],
+			        cancelOff : 'cancel-off-big.png',
+			        cancelOn  : 'cancel-on-big.png',
+			        size      : 24,
+			        starHalf  : 'star-half-big.png',
+			        starOff   : 'star-off-big.png',
+			        starOn    : 'star-on-big.png',
+			        target    : result,
+			        cancel    : false,
+			        targetKeep: true,
+					targetText: '请选择评分',			
+			        click: function(score, evt) {
+			          //alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt.type);
+			          //alert('你的评分是'+score*m+'分');
+			        }
+			     }); 
+			}
+		})
+		function words_deal(){
+			   var curLength=$("#TextArea1").val().length;
+			   if(curLength>500){
+			        var num=$("#TextArea1").val().substr(0,500);
+			        $("#TextArea1").val(num);
+			        alert("超过字数限制，最多输入500个字符" );
+			   }else{
+			        $(".textCount").text(500-$("#TextArea1").val().length);
+			   }
+		}
+  </script>
+</html>

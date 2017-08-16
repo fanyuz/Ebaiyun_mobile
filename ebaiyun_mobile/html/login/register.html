@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>注册</title>
+	    <!--初始化样式-->
+	    <link rel="stylesheet" href="../../css/reset.css" />
+	    <!--样式文件-->
+	    <link rel="stylesheet" type="text/css" href="../../css/swiper-3.4.2.min.css"/>
+	    <link rel="stylesheet" href="../../css/public.css" />
+	    <!--初始化 单位  rem-->
+	    <script src="../../js/reset.js"></script>
+	    
+	    <script src="../../js/jquery-1.8.3.min.js"></script>
+	    <script src="../../js/swiper-3.4.2.min.js"></script>
+	    <!--脚本文件-->
+	    <script src="../../js/public.js"></script>
+	</head>
+	<body style="background: #f5f5f5;">
+		<div class="payment_head review_head">
+			<a href="javascript:;" class="head_ss" id="return_btn">
+				<img src="../../img/icon/return.png"/>
+			</a>
+			<h2>注册</h2>
+		</div>
+		<div class="register_main">
+			<ul>
+				<li>
+					<span>手机号码</span>
+					<input type="tel" placeholder="请输入11位数字的手机号" class="phone"/>
+				</li>
+				<li>
+					<span>登录密码</span>
+					<input type="password" placeholder="登录密码不能少于六个字符" class="password"/>
+				</li>
+				<li>
+					<span>确认密码</span>
+					<input type="password" placeholder="登录密码不能少于六个字符" class="pasd_two"/>
+				</li>
+				<li>
+					<span>手机验证码</span>
+					<input type="text" placeholder="请输入验证码" class="yanz"/>
+					<a href="">获取验证码<i></i></a>
+				</li>
+				<li>
+					<span>邀请人手机号</span>
+					<input type="tel" placeholder="请输入11位数字的手机号(选填)" class="inviter"/>
+				</li>
+			</ul>
+			<p><input type="checkbox" checked/>我已经阅读并同意<a href="">《亿佰云服务协议》</a></p>
+			<button class="refister_btn">立即注册</button>
+			<span>已有账号，<a href="login.html">去登陆</a></span>
+		</div>
+		<div class="prompt">请输入正确的账号或密码</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//手机验证
+			function VerifyTheMobilePhone(phone){
+				var _phone = /^0?1[3|4|5|7|8][0-9]\d{8}$/;
+				if(_phone.test(phone)){
+					return true;
+				}
+				return false;
+			}
+			//验证用户名
+			function CheckUserName(username){
+				var _username = /^[a-zA-Z0-9_]\w{2,15}[a-zA-Z0-9]$/ig;
+				if(_username.test(username)){
+					return true;
+				}
+				return false;
+			}
+			
+			var prompt = $(".prompt");
+			var _number = /^[0-9]*$/;
+			//手机号验证
+			$(".phone").on("blur",function(){
+				var phone = $(this).val();
+				if (!VerifyTheMobilePhone(phone)) {
+					prompt.show();
+					prompt.html("手机格式不正确")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+					
+				} else{
+					
+				}
+			})
+			//密码验证
+			var pasd = ""
+			$(".password").on("blur",function(){
+				pasd = $(".password").val();
+				if (pasd.length >= 6 && pasd.length <= 16) {
+					if(_number.test(pasd)){
+						prompt.show();
+						prompt.html("建议使用字母、数字和符号两种及以上组合")
+						setTimeout(function(){
+							prompt.hide();
+						},2000)
+					}
+				} else{
+					prompt.show();
+					prompt.html("登录密码至少6位且包含字母与数字组合")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+				}
+				
+				//return pasd;
+			})
+			//确认密码验证
+			$(".pasd_two").on("blur",function(){
+				var pasd_two = $(this).val();
+				if(pasd_two !== pasd){
+					prompt.show();
+					prompt.html("登录密码和确认密码不一致")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+				}
+				console.log(pasd)
+				console.log(pasd_two)
+			})
+			
+			$(".refister_btn").click(function(){
+				if ($(".phone").val() == "") {
+					prompt.show();
+					prompt.html("手机号不能为空")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+					return ;
+				} else if($(".password").val() == ""){
+					prompt.show();
+					prompt.html("密码不能为空")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+					return ;
+				}else if($(".pasd_two").val() == ""){
+					prompt.show();
+					prompt.html("登录密码和确认密码不一致")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+					return ;
+				}else if($(".yanz").val() == ""){
+					prompt.show();
+					prompt.html("请输入验证码")
+					setTimeout(function(){
+						prompt.hide();
+					},2000)
+					return ;
+				}else {
+					
+				}
+			})
+		})
+	</script>
+</html>

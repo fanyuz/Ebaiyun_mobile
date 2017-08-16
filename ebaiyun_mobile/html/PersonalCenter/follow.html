@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>我的关注</title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/reset.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<div class="foll-nav">
+					<div>
+						<a href="javascript:;" class="active">商品</a>
+					</div>
+					<div>
+						<a href="follow-shop.html">店铺</a>
+					</div>					
+				</div>
+				<div class="bro-title">
+					<a href="follow-edit.html">编辑</a>
+				</div>
+			</div>
+
+		</div>
+		<!--退换货申请-->
+		<div class="m-t-30">
+			<div class="m-t-18">
+				<!--是否关注商品-->
+				<!--不关注-->
+				<div class="margin-l">
+					<form action="" class="bro-form">
+						<div class="bro-list">
+							<ul>
+								<li>
+									<div class="table">
+										<div class="table-td table-mr">
+											<input type="checkbox" name="" id="" class="bor-check">
+										</div>
+										<div class="table-td">
+											<a href="javascript:;" class="bro-img"><img src="../../img/20170613174501sd.png"/></a>
+										</div>
+										<div class="table-td table-pos">
+											<div class="bor-p">
+												<p>北京市 朝阳区 朝阳街 迪卡阿卡开的多福多寿水电费水电世界疯律...</p>
+												<b>¥29</b>
+											</div>
+											<div class="foll-ow">
+												<a href="javascript:;">加入购物车</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="table">
+										<div class="table-td table-mr">
+											<input type="checkbox" name="" id="" class="bor-check">
+										</div>
+										<div class="table-td">
+											<a href="javascript:;" class="bro-img"><img src="../../img/20170613174501sd.png"/></a>
+										</div>
+										<div class="table-td table-pos">
+											<div class="bor-p">
+												<p>北京市 朝阳区 朝阳街 迪卡阿卡开的多福多寿水电费水电世界疯律...</p>
+												<b>¥29</b>
+											</div>
+											<div class="foll-ow">
+												<a href="javascript:;">加入购物车</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="new-add bro-close">
+			<a href="JavaScript:;">取消关注</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function() {		  
+		  var tabsSwiper = new Swiper('#order-tab',{
+		    speed:500,
+		    onSlideChangeStart: function(){
+		      $(".li_orderlist").removeClass('curr')
+		      $(".li_orderlist").eq(tabsSwiper.activeIndex).addClass('curr')  
+		    }
+		  })
+		  $(".li_orderlist").on('touchstart mousedown',function(e){
+		    e.preventDefault()
+		    $(".li_orderlist").removeClass('curr')
+		    $(this).addClass('curr')
+		    tabsSwiper.slideTo( $(this).index() )
+		  })
+		  $(".li_orderlist").click(function(e){
+		    e.preventDefault()
+		  })
+		}		
+	</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>账户充值</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/reset.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="账户充值">账户充值</h4>
+			</div>
+		</div>
+		<!--账户充值-->
+		<form action="">
+			<div class="m-t-30">
+				<!--账户充值-->
+				<div class="arge">
+					<div class="arge-h4">充值金额</div>
+					<div class="arge-input">
+						<label for="">¥</label>
+						<input type="" name="" id="" value="" class="arge-b" onkeyup="argeYz($(this))"/>
+					</div>
+					<div class="arge-p">最小充值金额为1，充值的金额可在平台内进行使用</div>
+				</div>
+			</div>
+			<div class="ogo-submit">
+				<a href="paymentw.html">下一步</a>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript">
+		function argeYz(val){
+			var patten = /^[1-9]\d{0,15}$/;		
+			if(!patten.test(val.val())){
+				val.val('');
+				return false;
+			}
+			return true;
+		}
+	</script>
+</html>

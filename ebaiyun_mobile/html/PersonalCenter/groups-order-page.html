@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>订单详情</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/20170807.02.02.02.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="订单详情">订单详情</h4>
+			</div>
+		</div>
+		<div class="m-t-30">
+			<!--状态-->
+			<div class="order-page m-t-18">
+				<!--根据订单状态显示-->
+				<h4>待付款</h4>			
+			</div>
+			<!--收货人及地址-->
+			<div class="order-user">
+				<div class="user-id">
+					<span class="user-name fl">董小姐</span>
+					<span class="user-tel fr">182****3562</span>
+				</div>
+				<div class="user-site">
+					<span>地址：<b>北京市朝阳区不知道哪的街大楼附近看到了十分了解收款方经26号</b></span>
+				</div>
+			</div>
+			<div class="m-t-18">
+				<!--订单详情-->
+				<div class="order-itme"  id="order-tab">
+					<div class="">
+						<div class="order-itme-list ">
+							<div class="itme-box">
+								<div class="itme-box-ogo itme-pos clearfix">
+									<span class="itme-shangbiao"></span>
+									<!--跳转到店铺-->
+									<!--没有店铺隐藏-->
+									<a href="javascript:;" class="itme-dp">
+										<span class="shop-name">夜行狼旗舰店</span>
+										<span class="icon-point"></span>
+									</a>
+									<!--END-->
+								</div>
+								<div class="itme-mc">
+									<div class="itme-con">
+										<!--链接跳转到商品详情页-->
+										<a href="javascript:;">
+											<div class="itme-con-ab clearfix">
+												<div class="itme-con-a">
+													<div class="itme-con-a-l">
+														<div class="itme-con-img">
+															<img src="../../img/20170613174501sd.png"/ alt="商品阐释">
+														</div>
+													</div>
+												</div>
+												<div class="itme-con-b">
+	                                                <div class="imco-r">
+	                                                   	 夜行狼（YEXINGLANG）防蓝光防辐射眼镜平光镜电脑护目镜男女款上网专用保护眼睛 枪灰框
+	                                                </div>
+	                                            </div>
+	                                            <div class="itme-con-c">
+	                                            	<div class="itme-ca">
+	                                            		¥200000
+	                                            	</div>
+	                                            	<div class="itme-cb">
+	                                            		x<b>2</b>
+	                                            	</div>
+	                                            </div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="itme-mv">
+									<span>共1件商品 合计：</span>
+									<span class="imb-num">¥200000.90</span>
+									<!--if 是否免邮-->
+									<span>(免运费)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<!--订单编号-->
+			<div class="order-orderpage m-b-42">
+				<div class="order-bh">
+					<span>订单编号：<b id="c">110854252318512</b></span>
+					<span class="order-copy btn">复制</span>
+				</div>
+				<div class="order-bh">
+					<span>支付方式：<b>支付宝</b></span>
+				</div>
+				<!--if 判断是否支付-->
+				<!--未支付只显示下单时间-->
+				<div class="order-bh">
+					<span>下单时间：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+				<!--已取消的订单-->
+				<div class="order-bh">
+					<span>取消时间：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+				<!--已支付显示-->
+				<div class="order-bh">
+					<span>支付时间：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+				<!--卖家发货显示-->
+				<div class="order-bh">
+					<span>发货时间：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+				<!--申请退款显示-->
+				<div class="order-bh">
+					<span>申请退款：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+				<!--买家收货显示-->
+				<div class="order-bh">
+					<span>收货时间：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+				<!--评价完成后显示-->
+				<div class="order-bh">
+					<span>收货时间：<b>2017-06-22  9:00-15:00</b></span>
+				</div>
+			</div>
+		</div>
+		<!--根据订单状态显示操作按钮-->
+		<div class="order-operate">
+			<div class="order-oper-but clearfix">
+				<!--未付款状态订单显示-->
+				<div class="order-button clearfix">					
+					<a href="javascript:;" class="itme-f18e00">点击支付</a>
+					<a href="javascript:;" class="bgbox-close">取消订单</a>
+				</div>
+				<!--待发货状态订单显示-->
+				<div class="order-button clearfix" style="display: none;">
+					<a href="javascript:;" class="itme-f18e00">提醒发货</a>
+				</div>
+				<!--待收货货状态订单显示-->
+				<div class="order-button clearfix" style="display: none;">					
+					<a href="javascript:;" class="itme-f18e00">确认收货</a>
+					<a href="recruitment.html">查看物流</a>
+				</div>
+				<!--交易成功显示-->
+				<div class="order-button clearfix" style="display: none;">					
+					<a href="evaluate.html" class="itme-f18e00">我要评价</a>
+					<a href="javascript:vido(0);" class="itme-f18e00 bgbox-close">申请退款</a>					
+				</div>
+			</div>
+		</div>
+		<!--取消订单-->
+		<div class="order-close">
+			<div class="oog-posf">
+				<form action="">
+					<div class="ogo-itmeBox">
+						<!--根据选择按钮展示span字样-->
+						<h4>请选择<span>取消订单</span>的原因</h4>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box1" class="">收货地址填错了<input type="checkbox" name="1" id="box1" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box2" class="">忘记支付密码/余额不足<input type="checkbox" name="1" id="box2" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box3" class="">无法正常支付<input type="checkbox" name="1" id="box3" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box4" class="">不想买了<input type="checkbox" name="1" id="box4" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box5" class="">其他原因<input type="checkbox" name="1" id="box5" value=""></label>								
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+				<div class="ogo-boxsize">
+					<a href="javascript:;" class="box-quxiao">取消</a>
+					<a href="javascript:;" class="box-close">确认</a>
+				</div>
+			</div>
+		</div>
+		<!--END-->
+	</body>
+	<script src="../../js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+	    var c = document.getElementById("c");
+	    var s=c.innerHTML;
+	    var clipboard = new Clipboard('.btn', {
+	        text: function() {
+	            return s;
+	        }
+	    });	
+	    clipboard.on('success', function(e) {
+	        alert("复制成功");
+	    });
+	
+	    clipboard.on('error', function(e) {
+	        console.log(e);
+	    });
+    </script>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>我的抽奖</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/reset.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/time.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="我的抽奖">我的抽奖</h4>
+			</div>
+			<div class="order-tab bdb-1px">
+		        <ul class="clearfix">
+					<li class="li_orderlist curr li-w-33" func-id="newUserAllOrderList">
+		                <a href="luck-draw.html"><span>全部</span></a>
+		            </li>
+		            <li class="li_orderlist li-w-33" func-id="wait4Payment">
+		                <a href="luck-draw-进行中.html"><span>进行中</span></a>
+		            </li>
+		            <li class="li_orderlist li-w-33" func-id="wait4Delivery">
+		                <a href="luck-draw-已开奖.html"><span>已开奖</span></a>
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+		<!--抽奖列表-->
+		<div class="m-t-57">
+			<div class="order-itme"  id="order-tab">
+				<div class="">
+					<!--全部-->
+					<div class="swiper-slide">
+						<ul>
+							<li class="li-lucklis">
+								<div class="zbox-zbox">
+									<a href="../luckydraw/lucky_comm.html" class="li-abox clearfix">
+										<span class="luck-imhg">
+											<img src="../../img/20170613174501sd.png"/>
+										</span>
+										<b class="li-zhuangt luck-los">进行中</b>
+										<div class="luck-zbox">
+											<h4>慢生活系列简约夏长款棉麻呵呵</h4>
+											<span>商品期号：<em>123456</em></span>
+											<!--已开奖不显示开奖时间-->
+											<span>开奖时间：<em>2017/07/05 20:00:00</em></span>
+											<span>参与次数：<em>5次</em></span>
+										</div>
+									</a>
+									<!--暂时隐藏-->
+<!--									<div class="luck-but">
+										<a href="javascript:;">我的幸运号</a>
+									</div>-->
+								</div>
+								<div class="fnTimeCountDown" data-end="" trigger="">
+							        <span class="day"></span>天
+							        <span class="hour"></span>:
+							        <span class="mini"></span>:
+							        <span class="sec"></span>
+							 	</div>
+								<script type="text/javascript">
+								    $(".fnTimeCountDown").fnTimeCountDown("2018/07/08 18:00:00");
+								</script>
+							</li>
+							<li class="li-lucklis">
+								<div class="zbox-zbox">
+									<a href="javascript:;" class="li-abox clearfix">
+										<span class="luck-imhg">
+											<img src="../../img/20170613174501sd.png"/>
+										</span>
+										<b class="li-zhuangt luck-yellow">已开奖</b>
+										<div class="luck-zbox">
+											<h4>慢生活系列简约夏长款棉麻呵呵</h4>
+											<span>商品期号：<em>123456</em></span>
+											<span>参与次数：<em>5次</em></span>
+										</div>
+									</a>
+									<!--暂时隐藏-->
+<!--									<div class="luck-but">
+										<a href="javascript:;">我的幸运号</a>
+									</div>-->
+								</div>
+								<!--中奖人员展示-->
+<!--								<div class="abox-itme">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td>
+												<div class="abox-itmeimg">
+													<img src="../../img/icon/icon_id.png" alt="" />
+												</div>
+											</td>
+											<td class="abox-l">
+												<span>获奖者：<i>132****4562</i></span>
+												<span>参与次数：<i>100</i>次</span>
+												<span>开奖时间：<i>2017/07/05 20:00:00</i></span>
+												<span>幸运号码：<i>000000</i></span>
+											</td>
+										</tr>
+									</table>
+								</div>-->
+								<!--查看-->
+<!--								<div class="obxo-ck">
+									<a href="javascript:;">查看全部中奖者</a>
+								</div>-->
+							</li>
+						</ul>
+					</div>
+					<!--进行中-->
+					<div class="swiper-slide">
+						<ul>
+							<li class="li-lucklis">
+								<div class="zbox-zbox">
+									<a href="javascript:;" class="li-abox clearfix">
+										<span class="luck-imhg">
+											<img src="../../img/20170613174501sd.png"/>
+										</span>
+										<b class="li-zhuangt luck-los">进行中</b>
+										<div class="luck-zbox">
+											<h4>慢生活系列简约夏长款棉麻呵呵</h4>
+											<span>商品期号：<em>123456</em></span>
+											<!--已开奖不显示开奖时间-->
+											<span>开奖时间：<em>2017/07/05 20:00:00</em></span>
+											<span>参与次数：<em>5次</em></span>
+										</div>
+									</a>
+<!--									<div class="luck-but">
+										<a href="javascript:;">我的幸运号</a>
+									</div>-->
+								</div>
+								<div class="fnTimeCountDown" data-end="" trigger="">
+							        <span class="day">34</span>天
+							        <span class="hour">3</span>:
+							        <span class="mini">44</span>:
+							        <span class="sec">12</span>
+							   </div>
+							   <!--<script type="text/javascript">
+							   		f.ui("2017/8/11")
+							   </script>-->
+							</li>
+						</ul>
+					</div>
+					<!--已开奖-->
+					<div class="swiper-slide">
+						<ul>
+							<li class="li-lucklis">
+								<div class="zbox-zbox">
+									<a href="javascript:;" class="li-abox clearfix">
+										<span class="luck-imhg">
+											<img src="../../img/20170613174501sd.png"/>
+										</span>
+										<b class="li-zhuangt luck-yellow">已开奖</b>
+										<div class="luck-zbox">
+											<h4>慢生活系列简约夏长款棉麻呵呵</h4>
+											<span>商品期号：<em>123456</em></span>
+											<span>参与次数：<em>5次</em></span>
+										</div>
+									</a>
+<!--									<div class="luck-but">
+										<a href="javascript:;">我的幸运号</a>
+									</div>-->
+								</div>
+								<!--中奖人员展示-->
+<!--								<div class="abox-itme">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td>
+												<div class="abox-itmeimg">
+													<img src="../../img/icon/icon_id.png" alt="" />
+												</div>
+											</td>
+											<td class="abox-l">
+												<span>获奖者：<i>132****4562</i></span>
+												<span>参与次数：<i>100</i>次</span>
+												<span>开奖时间：<i>2017/07/05 20:00:00</i></span>
+												<span>幸运号码：<i>000000</i></span>
+											</td>
+										</tr>
+									</table>
+								</div>-->
+								<!--查看-->
+<!--								<div class="obxo-ck">
+									<a href="javascript:;">查看全部中奖者</a>
+								</div>-->
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

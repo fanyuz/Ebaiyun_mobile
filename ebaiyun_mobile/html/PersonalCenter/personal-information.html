@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.picker.min.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/reset.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/upload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/20170807.01.01.01.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body  style="max-height: 100vh;overflow: hidden;">
+		<div class="swiper-slide" id="a0">
+		<!--个人信息设置-->
+		<div class="set-up">
+			<div class="set-up-button" id="return_btn">
+				<span></span>
+			</div>
+			<h4 title="设置">个人信息</h4>
+			<div class="bro-title">
+				<a href="javascript:;">保存</a>
+			</div>
+		</div>
+		<!--菜单栏-->		
+			<form action="">
+				<div class="set-up-order">
+					<ul>
+						<li class="x-ogo-l">
+							<a href="javascript:;" id="orm-bg-bgbox">
+								<input type="file" id="orm-images" style="display: none;"/>
+								<div class="clearfix">
+									<div class="up-itme-size fl">
+										<span>头像</span>
+									</div>
+									<div class="fr">
+										<div class="iner-img fl" id="iner-img">
+											
+											<!--<img src="../../img/timg.png" alt="头像" />-->
+										</div>
+										<span class="up-span-z iner-span"></span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="set-up-itme clearfix">
+									<div class="up-itme-size fl">
+										<span>用户名</span>
+									</div>
+									<div class="fr">
+										<b>1352501520</b>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#a2" class="but-zbox">
+								<div class="set-up-itme clearfix">
+									<div class="up-itme-size fl">
+										<span>昵称</span>
+									</div>
+									<div class="fr">
+										<b class="user-sidename">大眼萌的小黄人</b>
+										<span class="up-span-z"></span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#a1" class="but-zboxz">
+								<div class="set-up-itme clearfix">
+									<div class="up-itme-size fl">
+										<span>性别</span>
+									</div>
+									<div class="fr">
+										<b class="user-xb">男</b>
+										<span class="up-span-z"></span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btn" id='demo2' data-options='{"type":"date","beginYear":1900,"endYear":2020}'>
+								<div class="set-up-itme clearfix">
+									<div class="up-itme-size fl">
+										<span>出生日期</span>
+									</div>
+									<div class="fr">
+										<b id='result'></b>
+										<span class="up-span-z"></span>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+		<div class="swiper-slide" id="a1" style="display: none;">
+				<!--个人信息设置-->
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="修改性别">修改性别</h4>
+			</div>
+			<!--菜单栏-->	
+			<form action="">
+				<div class="set-up-order">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<div class="set-up-itme clearfix">
+									<label for="man">女<input type="checkbox" name="1" id="man" value="女"/></label>
+									
+								</div>
+							</a>
+						</li>
+											<li>
+							<a href="javascript:;">
+								<div class="set-up-itme clearfix">
+									<label for="woman">男<input type="checkbox" name="1" id="woman" value="男"/></label>
+									
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="set-up-itme clearfix">
+									<label for="baom">保密<input type="checkbox" name="1" id="baom" value="保密"/></label>								
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+		<div class="swiper-slide" id="a2" style="display: none;">
+			<!--个人信息设置-->
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="修改昵称">修改昵称</h4>
+				<div class="bro-title">
+					<a href="javascript:;" class="inputUserName">确定</a>
+				</div>
+			</div>
+			<!--菜单栏-->
+			<form action="">
+				<div class="set-up-order">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<div class="set-up-itme clearfix">
+									<input type="text" name="" id="" class="set-input" placeholder="大眼萌的小黄人"/>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+
+	</body>
+	<script src="../../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+			(function($) {
+				$.init();
+				var result = $('#result')[0];
+				var btns = $('.btn');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							/*
+							 * rs.value 拼合后的 value
+							 * rs.text 拼合后的 text
+							 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+							 * rs.m 月，用法同年
+							 * rs.d 日，用法同年
+							 * rs.h 时，用法同年
+							 * rs.i 分（minutes 的第二个字母），用法同年
+							 */
+							result.innerText = rs.text;
+							/* 
+							 * 返回 false 可以阻止选择框的关闭
+							 * return false;
+							 */
+							/*
+							 * 释放组件资源，释放后将将不能再操作组件
+							 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+							 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+							 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+							 */
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+		</script>
+</html>

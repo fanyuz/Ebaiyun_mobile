@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/20170807.02.02.02.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="我的订单">我的订单</h4>
+			</div>
+			<!--导航-->
+			<div class="order-tab bdb-1px">
+		        <ul class="clearfix">
+					<li class="li_orderlist" func-id="newUserAllOrderList">
+		                <a href="groups-order.html"><span>全部</span></a>
+		            </li>
+		            <li class="li_orderlist  curr" func-id="wait4Payment">
+		                <a href="groups-order-待付款.html"><span>待付款</span></a>
+		            </li>
+<!--		            <li class="li_orderlist" func-id="wait4Delivery">
+		                <a href="javascript:;"><span>待成团</span></a>
+		            </li>-->
+		            <li class="li_orderlist" func-id="userCompletedOrderList">
+		                <a href="groups-order-待发货.html"><span>待发货</span></a>
+		            </li>
+		            <li class="li_orderlist" func-id="userCompletedOrderList">
+		                <a href="groups-order-待收货.html"><span>待收货</span></a>
+		            </li>
+		            <li class="li_orderlist " func-id="otherOrderList">
+		                <a href="groups-order-待评价.html"><span>待评价</span></a>
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+		<div class="m-t-57">
+			<div class="m-t-18">
+				<div class="order-itme"  id="order-tab">
+					<div class="">
+						<!--不同状态 循环输出对象-->
+						<!--根据导航ID输出排序-->
+						<!--全部订单-->						
+						<div class="order-itme-list swiper-slide">
+						<!--待付款状态订单-->	
+							<div class="itme-box  swiper-slide-active">
+								<div class="itme-box-ogo itme-pos clearfix">
+									<span class="itme-shangbiao"></span>
+									<!--跳转到店铺-->
+									<a href="javascript:;" class="itme-dp">
+										<span class="shop-name">夜行狼旗舰店</span>
+										<span class="icon-point"></span>
+									</a>
+									<!--待付款状态-->
+									<span class="itme-pt-mub">
+										待支付
+									</span>
+								</div>
+								<div class="itme-mc">
+									<div class="itme-con">
+										<!--链接跳转到订单详情-->
+										<a href="groups-order-page.html">
+											<div class="itme-con-ab clearfix">
+												<div class="itme-con-a">
+													<div class="itme-con-a-l">
+														<div class="itme-con-img">
+															<img src="../../img/20170613174501sd.png"/ alt="商品阐释">
+														</div>
+													</div>
+												</div>
+												<div class="itme-con-b">
+	                                                <div class="imco-r">
+	                                                   	 夜行狼（YEXINGLANG）防蓝光防辐射眼镜平光镜电脑护目镜男女款上网专用保护眼睛 枪灰框
+	                                                </div>
+	                                            </div>
+	                                            <div class="itme-con-c">
+	                                            	<div class="itme-ca">
+	                                            		¥200000
+	                                            	</div>
+	                                            	<div class="itme-cb">
+	                                            		x<b>2</b>
+	                                            	</div>
+	                                            </div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="itme-mv">
+									<span>共1件商品 合计：</span>
+									<span class="imb-num">¥200000.90</span>
+									<span>(免运费)</span>
+								</div>
+								<!--待支付状态-->
+								<div class="itme-payment clearfix">
+									<a href="javascript:;"  class="itme-f18e00">点击支付</a>
+									<a href="javascript:;" class="bgbox-close">取消订单</a>
+								</div>
+							</div>
+							<!--END-->
+						</div>
+					</div>									
+				</div>				
+			</div>
+		</div>
+		<!--确认-->
+		<div class="ogo-bg-colse">
+			<div class="ogo-bg-oga">
+				<h4>确认删除该订单吗？</h4>
+				<div class="ogo-zzz">
+					<a href="javascript:;" class="quxiao">取消</a>
+					<a href="javascript:;" class="close-bt">删除</a>
+				</div>
+			</div>
+		</div>
+		<!--取消订单-->
+		<div class="order-close">
+			<div class="oog-posf">
+				<form action="">
+					<div class="ogo-itmeBox">
+						<!--根据选择按钮展示span字样-->
+						<h4>请选择<span>申请退款</span>的原因</h4>
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box1" class="">收货地址填错了<input type="checkbox" name="1" id="box1" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box2" class="">忘记支付密码/余额不足<input type="checkbox" name="1" id="box2" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box3" class="">无法正常支付<input type="checkbox" name="1" id="box3" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box4" class="">不想买了<input type="checkbox" name="1" id="box4" value=""></label>								
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="set-up-itme clearfix">
+										<label for="box5" class="">其他原因<input type="checkbox" name="1" id="box5" value=""></label>								
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+				<div class="ogo-boxsize">
+					<a href="javascript:;" class="box-quxiao">取消</a>
+					<a href="javascript:;" class="box-close">确认</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

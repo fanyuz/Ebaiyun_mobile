@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>确认订单</title>
+	    <!--初始化样式-->
+	    <link rel="stylesheet" href="../../css/reset.css" />
+	    <!--样式文件-->
+	    <link rel="stylesheet" href="../../css/public.css" />
+	    <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+	    <!--初始化 单位  rem-->
+	    <script src="../../js/reset.js"></script>
+	    
+	    <script src="../../js/jquery-1.8.3.min.js"></script>
+	    <!--脚本文件-->
+	    <script src="../../js/public.js"></script>
+	</head>
+	<body style="background: #F5F5F5;">
+		<div class="payment_head review_head">
+			<a href="javascript:;" class="head_ss" id="return_btn">
+				<img src="../../img/icon/return.png"/>
+			</a>
+			<h2>订单确认</h2>
+			<a href="" class="more">
+				<img src="../../img/icon/gend.png"/>
+			</a>
+		</div>
+		
+		<!--地址-->
+		<div class="address">
+			<div class="add_img">
+				<img src="../../img/attr_img.jpg"/>
+			</div>
+			<!--地址信息-->
+			<div class="add_main">
+				<h3><i>默认</i><span>收货地址</span></h3>
+				<div class="content_add" style="display: block;"  id="add_entrance">
+					<h4>收货人<span>18635665951</span></h4>
+					<p>北京市 朝阳区 朝阳街 迪卡阿界疯了法律框架房快乐发吉林省快递费</p>
+					<a href="javascript:;"><img src="../../img/icon/icon_add.png"/></a>
+				</div>
+				<a href="javascript:;" class="address_add">
+					添加收货地址 <i>+</i>
+				</a>
+			</div>
+		</div>
+		<!--订单信息-->
+		<div class="order_form">
+			<!--订单商品-->
+			<div class="shopping_list">
+				<ul>
+					<li>
+						<h3><img src="../../img/icon/icon_dp.png" alt="" />丹丹旗舰店</h3>
+						<div class="shopping_m">
+							<a href="" class="shoppimg"><img src="../../img/shpping1.jpg"/></a>
+							<div class="shopping_message">
+								<a href="">英爵伦 英爵伦 男士短袖T恤 夏季体恤 男哈装2017新男士短袖T恤...</a>
+								<p><span>&yen;99.00</span><i>森林绿  XL</i></p>
+								<em>x3</em>
+							</div>
+						</div>
+					</li>
+					<li>
+						<h3><img src="../../img/icon/icon_dp.png" alt="" />丹丹旗舰店</h3>
+						<div class="shopping_m">
+							<a href="" class="shoppimg"><img src="../../img/shpping1.jpg"/></a>
+							<div class="shopping_message">
+								<a href="">英爵伦 英爵伦 男士短袖T恤 夏季体恤 男哈装2017新男士短袖T恤...</a>
+								<p><span>&yen;99.00</span><i>森林绿  XL</i></p>
+								<em>x3</em>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--配送信息-->
+			<div class="delivery">
+				<ul>
+					<li>
+						<p>配送方式</p>
+						<img src="../../img/icon/icon_add.png" alt="" />
+						<span>顺丰快递￥10.00</span>
+						
+					</li>
+					<li>
+						<p>运险费</p>
+						<img src="../../img/icon/icon_add.png" alt="" />
+						<span>商家送，确认收货前退货可赔</span>
+						
+					</li>
+					<li>
+						<p>买家留言</p>
+						<img src="../../img/icon/icon_add.png" alt="" />
+						<input type="text" placeholder="选填，对本次交易的说明"/>
+						
+					</li>
+					<li>
+						<h5>共 <i>2 </i>件商品    小计：<i>&yen;188.00</i></h5>
+					</li>
+				</ul>
+			</div>
+			<!--配送信息-->
+			<div class="delivery peisong">
+				<ul>
+					<li>
+						<p>佰云币</p>
+						<div class="delivery_btn">
+							<span></span>
+							<input type="checkbox"/>
+						</div>
+						<span>目前可用佰云币10</span>
+						
+					</li>
+					<li>
+						<p>积分抵扣</p>
+						<div class="delivery_btn">
+							<span></span>
+							<input type="checkbox"/>
+						</div>
+						<span>目前可用积分288</span>
+						
+					</li>
+					<li>
+						<p>账户余额</p>
+						<div class="delivery_btn">
+							<span></span>
+							<input type="checkbox"/>
+						</div>
+						<span>目前可用余额10000</span>
+						
+					</li>
+				</ul>
+				<div class="clearing">
+					<p>积分抵扣<span>-&yen;25.00</span></p>
+					<p>账户余额<span>-&yen;25.00</span></p>
+					<p>运费<span>+&yen;25.00</span></p>
+					<h6>总计: <i>&yen;188.00</i></h6>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部确认支付-->
+		<div class="footer_submit">
+			<a href="">提交订单</a>
+			<div class="submit_message">
+				<p>实付款：<span>&yen;310.00</span></p>
+				<p>包含快递费：<i>&yen;10.00</i></p>
+			</div>
+			
+		</div>
+		
+		
+		<!--选择地址-->
+		<div class="add_list">
+			<div class="set-fixed">
+				<div class="set-up">
+					<div class="set-up-button shut_down_list">
+						<span></span>
+					</div>
+					<h4>地址管理</h4>
+				</div>
+			</div>
+			<!--地址列表-->
+			<div class="m-t-30 m-b-42">
+				<div class="address-z">
+					<div class="address-list">
+						<div class="address-box">
+							<div class="address-oga clearfix">
+								<span class="fl">收货人</span>
+								<span class="fr">1891103621</span>
+							</div>
+							<div class="address-ogb">
+								<p>北京市 朝阳区 朝阳街 迪卡阿卡丽飞机离开的世界疯了法律框架房快乐发吉林省快递费</p>
+							</div>
+							
+						</div>
+						<div class="address-box">
+							<div class="address-oga clearfix">
+								<span class="fl">收货人</span>
+								<span class="fr">1891103621</span>
+							</div>
+							<div class="address-ogb">
+								<p>北京市 朝阳区 朝阳街 迪卡阿卡丽飞机离开的世界疯了法律框架房快乐发吉林省快递费</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--新增地址-->
+			<div class="new-add">
+				<a href="javascript:;">新增地址</a>
+			</div>
+			<!--确认-->
+			<div class="ogo-bg-colse">
+				<div class="ogo-bg-oga">
+					<h4>确认删除该地址吗？</h4>
+					<div class="ogo-zzz">
+						<a href="javascript:;" class="quxiao">取消</a>
+						<a href="javascript:;" class="close-bt">删除</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--新增地址-->
+		<div class="add_address">
+			<div class="set-fixed">
+				<div class="set-up">
+					<div class="set-up-button shut_down_add">
+						<span></span>
+					</div>
+					<h4 title="新增地址">新增地址</h4>
+				</div>
+			</div>
+			<!--信息栏-->
+			<div class="m-t-30 m-b-42">
+				<div class="edit-ogo">
+					<form action="" method="post">
+						<div class="edit-zbox">
+							<div class="edit-zbox-list clearfix">
+								<label for="">收货人</label>
+								<input type="text" name="" id="" />
+							</div>
+						</div>
+						<div class="edit-zbox">
+							<div class="edit-zbox-list clearfix">
+								<label for="">手机号</label>
+								<input type="text" name="" id="" />
+							</div>
+						</div>
+						<div class="edit-zbox" id="showCityPicker3">
+							<div class="edit-zbox-list clearfix">
+								<label for="">所在地区</label>
+								<div class="zbox-p" id="cityResult3">河北省 山西市 安徽县</div>
+								<span class="up-span-z"></span>
+							</div>
+						</div>
+	<!--					<div class="edit-zbox">
+							<div class="edit-zbox-list clearfix">
+								<label for="">街道/镇</label>
+								<span class="up-span-z"></span>
+							</div>
+						</div>-->
+						<div class="edit-zbox">
+							<div class="edit-zbox-list clearfix">
+								<label for="">邮编</label>
+								<input type="text" name="" id="" />
+								<span class="up-span-z"></span>
+							</div>
+						</div>
+						<div class="edit-zbox">
+							<div class="edit-zbox-list clearfix">
+								<textarea name="" rows="" cols="" placeholder="详细地址"></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--新增地址-->
+			<div class="new-add" id="baocun">
+				<a href="javascript:;">保存</a>
+			</div>
+		</div>
+		
+	</body>
+</html>

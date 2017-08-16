@@ -1,0 +1,224 @@
+{
+	"index.html": {
+		"resources": [
+			"js/public.js",
+			"img/home_nav1.jpg",
+			"img/dess.png",
+			"css/public.css",
+			"img/home_nav4.jpg",
+			"img/home_cj.jpg",
+			"img/pingguo.jpg",
+			"css/swiper-3.4.2.min.css",
+			"img/mschouj.jpg",
+			"img/home_banner.jpg",
+			"js/jquery-1.8.3.min.js",
+			"img/search_icon.jpg",
+			"img/home_nav2.jpg",
+			"js/swiper-3.4.2.min.js",
+			"img/home_nav3.jpg",
+			"css/reset.css",
+			"js/reset.js",
+			"img/cmp_t.jpg",
+			"img/bangzhu.png",
+			"img/choupingpai.jpg",
+			"img/choujiang.png",
+			"img/cqq_t.jpg",
+			"img/jifen.png",
+			"img/tuangou.png",
+			"img/gouquanqiu.jpg",
+			"img/tuangou1.jpg",
+			"img/tuangou3.jpg",
+			"img/tuangou2.jpg",
+			"img/guanggao.jpg",
+			"img/youping.png",
+			"img/bushui.jpg",
+			"img/suoni.jpg",
+			"img/xiangji.jpg",
+			"img/shoubiao.jpg",
+			"img/kongtiao.jpg",
+			"img/chaye.jpg",
+			"img/shpping1.jpg",
+			"html/PersonalCenter/personal-center.html",
+			"img/icon/home2.png",
+			"img/icon/my1.png",
+			"img/icon/fenl1.png",
+			"img/icon/gouwuc1.png",
+			"img/icon/chouj1.png",
+			"html/shopping/search.html",
+			"html/shopping/shopping_car.html",
+			"html/shopping/groupbuyinglist.html"
+		],
+		"refer": [
+			"html/PersonalCenter/personal-center.html",
+			"html/shopping/search.html",
+			"html/shopping/shopping_car.html",
+			"html/shopping/groupbuyinglist.html"
+		]
+	},
+	"html/PersonalCenter/personal-center.html": {
+		"resources": [
+			"img/icon_liulan.png",
+			"css/base.css",
+			"img/icon_fh.gif",
+			"img/icon_kj.gif",
+			"img/20170802173739zzz.png",
+			"img/icon_guanzhu.png",
+			"img/icon_fk.gif",
+			"img/icon_xx.png",
+			"img/m-bg7481.png",
+			"img/icon_choujiang.png",
+			"img/timg.png",
+			"img/icon_tuan.gif",
+			"img/icon_tuangou.png",
+			"img/icon_sz.png",
+			"img/icon_bangzhu.png",
+			"img/icon_sf.gif",
+			"img/icon_tuikuan.png",
+			"img/icon_shoucang.png",
+			"img/shpping1.jpg",
+			"css/public.css",
+			"img/icon/home2.png",
+			"img/icon/my1.png",
+			"img/icon/fenl1.png",
+			"css/reset.css",
+			"img/icon/gouwuc1.png",
+			"img/icon/chouj1.png",
+			"js/reset.js",
+			"html/PersonalCenter/set-up.html"
+		],
+		"refer": [
+			"html/PersonalCenter/set-up.html"
+		]
+	},
+	"html/shopping/search.html": {
+		"resources": [
+			"img/icon/return.png",
+			"js/jquery-1.8.3.min.js",
+			"img/search_icon.jpg",
+			"js/public.js",
+			"css/public.css",
+			"css/reset.css",
+			"js/reset.js",
+			"img/icon/fangdaj.png",
+			"html/shopping/shoppingList.html"
+		],
+		"refer": [
+			"html/shopping/shoppingList.html"
+		]
+	},
+	"html/shopping/shoppingList.html": {
+		"resources": [
+			"img/icon/jiant_shx.jpg",
+			"img/icon/jiantou_sx.jpg",
+			"img/icon/jiant_x.jpg",
+			"html/shopping/shopping_car.html",
+			"html/shopping/commodity.html"
+		],
+		"refer": [
+			"html/shopping/shopping_car.html",
+			"html/shopping/commodity.html"
+		]
+	},
+	"html/shopping/shopping_car.html": {
+		"resources": [
+			"img/icon/message.jpg",
+			"js/jquery-1.8.3.min.js",
+			"js/public.js",
+			"css/public.css",
+			"css/reset.css",
+			"js/reset.js",
+			"img/shpping1.jpg",
+			"img/icon/fenxiang.jpg",
+			"img/icon/home1.png",
+			"img/man_ing.jpg",
+			"img/icon/gouwuc2.png",
+			"img/icon/fenl1.png",
+			"img/icon/my1.png",
+			"img/icon/chouj1.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/PersonalCenter/set-up.html": {
+		"resources": [
+			"img/icon/icon_guany.png",
+			"img/icon/icon_my_center.png",
+			"img/icon/icon_shouh.png",
+			"img/icon/icon_stare.png",
+			"img/icon/icon_yij.png",
+			"html/PersonalCenter/about-us.html",
+			"img/icon/icon_anq.png",
+			"img/icon/icon_rt.png",
+			"html/PersonalCenter/personal-information.html",
+			"html/PersonalCenter/personal-center.html"
+		],
+		"refer": [
+			"html/PersonalCenter/about-us.html",
+			"html/PersonalCenter/personal-information.html",
+			"html/PersonalCenter/personal-center.html"
+		]
+	},
+	"html/PersonalCenter/about-us.html": {
+		"resources": [
+			"img/banbenlogo.png",
+			"html/PersonalCenter/set-up.html"
+		],
+		"refer": [
+			"html/PersonalCenter/set-up.html"
+		]
+	},
+	"html/PersonalCenter/personal-information.html": {
+		"resources": [
+			"html/PersonalCenter/set-up.html"
+		],
+		"refer": [
+			"html/PersonalCenter/set-up.html"
+		]
+	},
+	"html/shopping/commodity.html": {
+		"resources": [
+			"js/jquery-1.8.3.min.js",
+			"img/icon/return.png",
+			"js/public.js",
+			"css/public.css",
+			"css/reset.css",
+			"js/reset.js",
+			"img/icon/gend.png",
+			"img/icon/car.png",
+			"img/comm_bann.jpg",
+			"js/swiper-3.4.2.min.js",
+			"css/swiper-3.4.2.min.css",
+			"img/icon/fenxiang.jpg",
+			"img/icon/gengduo.png",
+			"img/review_img.jpg",
+			"img/review_mem.jpg",
+			"img/choice_img.jpg",
+			"img/icon/lishi.png",
+			"img/icon/fenxiang_comm.png",
+			"img/icon/xiaoxi_comm.png",
+			"img/icon/shouye_comm.png",
+			"img/icon/dianpu.jpg",
+			"img/icon/top_jt.png",
+			"img/icon/xiaoxi.jpg",
+			"img/icon/shouc.jpg",
+			"img/icon/sousuo_comm.png",
+			"img/icon/close.jpg"
+		]
+	},
+	"html/shopping/groupbuyinglist.html": {
+		"resources": [
+			"img/icon/return.png",
+			"img/icon/fangdaj.png",
+			"js/jquery-1.8.3.min.js",
+			"js/public.js",
+			"css/public.css",
+			"css/reset.css",
+			"img/icon/gouwuc1.png",
+			"js/reset.js",
+			"img/shpping1.jpg",
+			"img/icon_img.jpg"
+		]
+	}
+}

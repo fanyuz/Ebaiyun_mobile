@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>支付</title>
+	    <!--初始化样式-->
+	    <link rel="stylesheet" href="../../css/reset.css" />
+	    <!--样式文件-->
+	    <link rel="stylesheet" href="../../css/public.css" />
+	    <!--初始化 单位  rem-->
+	    <script src="../../js/reset.js"></script>
+	    
+	    <script src="../../js/jquery-1.8.3.min.js"></script>
+	    <!--脚本文件-->
+	    <script src="../../js/public.js"></script>
+	</head>
+	<body style="background: #F5F5F5;">
+		<div class="payment_head">
+			<a href="javascript:;" class="head_ss" id="return_btn">
+				<img src="../../img/icon/return.png"/>
+			</a>
+			<h2>支付方式</h2>
+			<a href="" class="more">
+				<img src="../../img/icon/gend.png"/>
+			</a>
+		</div>
+		<div class="payment_main">
+			<h3>订单金额<span>&yen;310.00</span></h3>
+			<ul>
+				<h4>支付方式</h4>
+				<li>
+					<img src="../../img/icon/weixin.png"/>
+					<p>微信支付</p>
+					<input type="radio" name="pay"/>
+				</li>
+				<li>
+					<img src="../../img/icon/zhifubao.png"/>
+					<p>支付宝支付</p>
+					<input type="radio" name="pay"/>
+				</li>
+			</ul>
+			<div class="payment_img"><img src="../../img/mao.png"/></div>
+		</div>
+		<a href="" class="payment_footer_btn">确认支付</a>
+	</body>
+</html>

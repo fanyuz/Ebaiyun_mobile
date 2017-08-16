@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<title>帮助中心</title>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+	</head>
+	<body>
+		<div class="set-fixed">
+			<div class="set-up">
+				<div class="set-up-button" id="return_btn">
+					<span></span>
+				</div>
+				<h4 title="帮助中心">帮助中心</h4>
+			</div>
+		</div>
+		<div class="m-t-30">
+			<div class="mui-content">
+				<div class="mui-content-padded">
+<!--					<div class="mui-input-row mui-search">
+						<input type="search" class="mui-input-clear" placeholder="请输入您遇到的问题">
+					</div>-->
+	<!--				<div class="mui-input-row mui-search mui-plus-visible">
+						<input id="search" type="search" class="mui-input-speech mui-input-clear" placeholder="带语音输入的搜索框">
+					</div>-->
+				</div>
+			</div>
+			<div class="mui-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right ogo-buttom" href="#">购物问题</a>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="about-us-page.html">
+									问题1
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题2
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题3
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题4
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right ogo-buttom" href="#">订单问题</a>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题1
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题2
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题3
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a class="mui-navigate-right bg-color" href="javascript:;">
+									问题4
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right ogo-buttom" href="#">我也不知道都有蛤蟆问题</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--客服-->
+		<div class="help-service">
+			<a href="javascript:;"></a>
+		</div>
+		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/reset.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			 //语音识别完成事件
+/*			document.getElementById("search").addEventListener('recognized', function(e) {
+				console.log(e.detail.value);
+			});
+
+			var nativeWebview, imm, InputMethodManager;
+			var initNativeObjects = function() {
+				if (mui.os.android) {
+					var main = plus.android.runtimeMainActivity();
+					var Context = plus.android.importClass("android.content.Context");
+					InputMethodManager = plus.android.importClass("android.view.inputmethod.InputMethodManager");
+					imm = main.getSystemService(Context.INPUT_METHOD_SERVICE);
+				} else {
+					nativeWebview = plus.webview.currentWebview().nativeInstanceObject();
+				}
+			};
+			var showSoftInput = function() {
+				if (mui.os.android) {
+					imm.toggleSoftInput(0, InputMethodManager.SHOW_FORCED);
+				} else {
+					nativeWebview.plusCallMethod({
+						"setKeyboardDisplayRequiresUserAction": false
+					});
+				}
+				setTimeout(function() {
+					var inputElem = document.querySelector('input');
+					inputElem.focus();
+					inputElem.parentNode.classList.add('mui-active'); //第一个是search，加上激活样式
+				}, 200);
+			};*/
+/*			mui.plusReady(function() {
+				initNativeObjects();
+				showSoftInput();
+			});*/
+
+		</script>
+	</body>
+</html>

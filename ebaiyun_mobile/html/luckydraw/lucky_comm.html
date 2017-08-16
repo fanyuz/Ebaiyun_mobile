@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>商品详情</title>
+	    <!--初始化样式-->
+	    <link rel="stylesheet" href="../../css/reset.css" />
+	    <!--样式文件-->
+	    <link rel="stylesheet" type="text/css" href="../../css/swiper-3.4.2.min.css"/>
+	    <link rel="stylesheet" href="../../css/public.css" />
+	    <!--初始化 单位  rem-->
+	    <script src="../../js/reset.js"></script>
+	    
+	    <script src="../../js/jquery-1.8.3.min.js"></script>
+	    <script src="../../js/swiper-3.4.2.min.js"></script>
+	    <!--脚本文件-->
+	    <script src="../../js/public.js"></script>
+	</head>
+	<body style="background: #F5F5F5;">
+		<!--商品详情头部-->
+		<div class="payment_head review_head">
+			<a href="javascript:;" class="head_ss" id="return_btn">
+				<img src="../../img/icon/return.png"/>
+			</a>
+			<h2>商品详情</h2>
+			<a href="" class="more">
+				<img src="../../img/icon/gend.png"/>
+			</a>
+		</div>
+		<!--详情商品图片-->
+		<div class="comm_banner" id="comm_banner">
+			<div class="condition" style="background: url(../../img/icon/condition.png) no-repeat;">进行中</div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="../../img/comm_bann.jpg"/>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="../../img/comm_bann.jpg"/>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="../../img/comm_bann.jpg"/>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="../../img/comm_bann.jpg"/>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!--商品展示信息-->
+		<div class="comm_message group_message">
+			<p>ONLY2017夏季新品蕾丝镂空抽褶收腰镂空抽褶镂空抽褶连衣裙女|117207529</p>
+			
+			<div class="jiage">
+				<span>&yen;99.00</span><b>&yen;99.00</b>
+				<div class="commodity_num">
+					<i class="minus">-</i>
+					<input type="text" class="num" value="1"/>
+					<i class="num_add">+</i>
+				</div>
+			</div>
+		</div>
+		
+		<!--商品期号-->
+		<div class="issue">
+			<p>商品期号：<i>123456789</i><span>22 天 23 : 24 : 00</span></p>
+			<p>开奖时间：<i>2017/05/04  12:12:00</i></p>
+			<p><em>您还没有参与抽奖，抽奖次数越多，中奖几率越大哦~</em></p>
+		</div>
+		<!--店铺信息  进入店铺-->
+		<!--<div class="entrance_store">
+			
+		</div>-->
+		
+		<!--商品详情-->
+		<div class="commodity_details">
+			<div class="details_nav">
+				<a href="javascript:;" class="active">商品详情</a>
+				<a href="javascript:;">产品参数</a>
+				<a href="javascript:;">售后服务</a>
+			</div>
+			<div class="details_nav_hide">
+				<a href="javascript:;" class="active">商品详情</a>
+				<a href="javascript:;">产品参数</a>
+				<a href="javascript:;">售后服务</a>
+			</div>
+			<div class="details_main">
+				<img src="../../img/details_img.jpg" alt="" />
+				<img src="../../img/details_img.jpg" alt="" />
+			</div>
+		</div>
+		
+		
+		<!--底部购买栏-->
+		<div class="lucky_footer">
+			<button>立即抽奖</button>
+		</div>
+		<!--<div class="buy_footer">
+			<div class="footer_left">
+				<a href="">
+					<img src="../../img/icon/xiaoxi.jpg"/>
+					<em>消息</em>
+				</a>
+				<a href="">
+					<img src="../../img/icon/shouc.jpg"/>
+					<em>收藏</em>
+				</a>
+				<a href="">
+					<img src="../../img/icon/dianpu.jpg"/>
+					<em>店铺</em>
+				</a>
+			</div>
+			<a href="" class="add_car">加入购物车</a>
+			<a href="" class="promptly_buy">立即购买</a>
+		</div>-->
+		<!--商品类型选择-->
+		<div class="shopping_choice">
+			<div class="choice_top">
+				<div class="choice_img">
+					<img src="../../img/choice_img.jpg" alt="" />
+				</div>
+				<div class="choice_price">
+					<p>&yen;199.00</p>
+					<p>库存<i>1556</i>件</p>
+				</div>
+				<div class="close">
+					<img src="../../img/icon/close.jpg" alt=""/>
+				</div>
+			</div>
+			<div class="choice_main">
+				<ul class="class_select">
+					<h3>颜色</h3>
+					<li class="active">00A橙红色<input type="radio" name="color"/></li>
+					<li>00A橙红色<input type="radio" name="color"/></li>
+					<li>00A橙红色<input type="radio" name="color"/></li>
+					<li>00A红色<input type="radio" name="color"/></li>
+					<li>00A橙红色<input type="radio" name="color"/></li>
+					<li>00A橙红色<input type="radio" name="color" /></li>
+					<li>00A红色<input type="radio" name="color"/></li>
+				</ul>
+				<ul class="class_select">
+					<h3>尺码</h3>
+					<li class="active">170/L <input type="radio" name="cm"/></li>
+					<li>180/XL<input type="radio" name="cm"/></li>
+					<li>180/XXL<input type="radio" name="cm"/></li>
+					<li>180/XXXL<input type="radio" name="cm"/></li>
+					<li>180/XL<input type="radio" name="cm"/></li>
+				</ul>
+				<div class="buy_quantity">
+					<h4>购买数量</h4>
+					<div class="commodity_num">
+						<i class="minus">-</i>
+						<span class="num">1</span>
+						<i class="num_add">+</i>
+					</div>
+				</div>
+			</div>
+			<div class="verify">确定</div>
+		</div>
+	</body>
+	<script>        
+	  var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'horizontal',
+	    loop: true,
+	    paginationElement: "li",
+	    
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	  })   
+	  
+	  //详情页吸顶条
+    $(document).ready(function(){
+		var time;
+		$(window).scroll(function(){
+			var mTop = $('.details_nav')[0].offsetTop;
+	    	var sTop = $(window).scrollTop();
+	    	result = mTop - sTop - 50;
+			clearTimeout(time);
+			if (result <= 0) {
+				time = setTimeout(function(){
+					$(".details_nav_hide").addClass("details_nav_show");
+				})
+			} else{
+				time = setTimeout(function(){
+					$(".details_nav_hide").removeClass("details_nav_show");
+				})
+			}
+			//console.log($(window).scrollTop())
+		})
+	})
+  </script>
+</html>

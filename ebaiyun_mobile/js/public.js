@@ -1,5 +1,5 @@
 $(function(){
-	
+	console.log("%c 亿佰云商城欢迎您！","font-size:24px;color:red;")
 	//返回上个页面
 	$("#return_btn").click(function(){
 		window.history.back()
@@ -214,6 +214,26 @@ $(function(){
 		$("#classify_right >li").eq($(this).index()).addClass("show").siblings().removeClass("show");
 	})
 	
+	
+	
+	//回到顶部
+	var time;
+	$(window).scroll(function(){
+		clearTimeout(time);
+		if($(window).scrollTop() > 100){
+			time = setTimeout(function(){
+				$(".back_to_top").show();
+			})
+		}
+		else{
+			time = setTimeout(function(){
+				$(".back_to_top").hide();
+			})
+		}
+	})
+	$(".back_to_top").click(function(){
+		$('body,html').animate({scrollTop:0},300)
+	})
 	
 
 	

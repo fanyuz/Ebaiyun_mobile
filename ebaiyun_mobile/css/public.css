@@ -846,6 +846,20 @@
   background: #009646;
   color: #FFFFFF;
 }
+.back_to_top {
+  width: 2.133333rem;
+  height: 2.133333rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 999999;
+  display: none;
+}
+.back_to_top img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 /*******购物车*********/
 .cal_head {
   width: 100%;
@@ -1242,6 +1256,14 @@
   float: left;
   margin-right: 1rem;
 }
+.comm_message > b {
+  color: #999999;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  display: block;
+  width: 100%;
+  margin-top: 0.6rem;
+}
 .comm_message .jiage {
   width: 78%;
   line-height: 1.8rem;
@@ -1355,6 +1377,17 @@
   font-size: 0.6rem;
   color: #333;
   text-align: center;
+}
+.comm_message .shoucang {
+  width: 1.5rem;
+  height: 1.3rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+}
+.comm_message .shoucang img {
+  width: 1.5rem;
+  height: 1.3rem;
 }
 .comm_zp {
   width: 100%;
@@ -3262,12 +3295,12 @@
 .prompt {
   width: 86%;
   height: 3rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   line-height: 3rem;
   text-align: center;
   font-size: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 1.5rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -3352,5 +3385,233 @@
 }
 .register_main > span > a {
   color: #009646;
+}
+/****************秒杀专区********************/
+.seckill_nav {
+  width: 100%;
+  height: 3rem;
+  background: #FFFFFF;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  z-index: 999999;
+  overflow: hidden;
+}
+.seckill_nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.seckill_nav ul li {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+.seckill_nav ul li a {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: #333333;
+  display: block;
+  font-weight: 600;
+}
+.seckill_nav ul li span {
+  font-size: 0.6rem;
+  color: #999999;
+}
+.seckill_nav ul .active a,
+.seckill_nav ul .active span {
+  color: #F95555;
+}
+.seckill_list {
+  margin-top: 6rem;
+}
+.count_down {
+  width: 100%;
+  height: 2.3rem;
+  text-align: center;
+  line-height: 1rem;
+  padding: 0.6rem 0;
+  font-size: 0.8rem;
+  color: #333333;
+}
+.count_down span {
+  text-align: center;
+  margin-right: 0.4rem;
+}
+.count_down i {
+  display: inline-block;
+  height: 1rem;
+  background: #333333;
+  color: #FFFFFF;
+  padding: 0 0.1rem;
+  border-radius: 0.2rem;
+  margin-right: 0.1rem;
+}
+.seckill_message {
+  width: 67%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+.seckill_message .shopp_name {
+  font-size: 0.9rem;
+  color: #333333;
+  line-height: 1.6rem;
+  display: block;
+  width: 100%;
+}
+.seckill_message > span {
+  font-size: 0.9rem;
+  color: #F95555;
+  position: absolute;
+  left: 0;
+  bottom: 0.5rem;
+}
+.seckill_message .shopp_btn {
+  width: 5.333333rem;
+  height: 2rem;
+  background: #55AAFF;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.2rem;
+}
+.seckill_message .snap_up,
+.seckill_message .sell_out {
+  width: 5.333333rem;
+  height: 2rem;
+  background: #F95555;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.2rem;
+}
+.seckill_message .sell_out {
+  background: #CCCCCC !important;
+}
+.sales_volume {
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+  color: #999999;
+}
+.sales_volume i {
+  margin-right: 1.2rem;
+  float: left;
+}
+.sales_volume p {
+  width: 5.5rem;
+  height: 0.666666rem;
+  float: left;
+  background: #F5F5F5;
+  border-radius: 0.333333rem;
+  position: relative;
+}
+.sales_volume p em {
+  width: 20%;
+  height: 100%;
+  background: #FA9696;
+  border-radius: 0.333333rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.seckill_prompt {
+  width: 86%;
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  display: none;
+}
+/*****秒杀详情******/
+.seckill_mess {
+  width: 100%;
+  overflow: hidden;
+  background: #FFFFFF;
+  padding: 0.4rem 1rem;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+.seckill_mess > p:nth-child(1) {
+  font-size: 0.9rem;
+  width: 78%;
+  line-height: 1.1rem;
+  color: #333;
+}
+.seckill_mess > b {
+  color: #999999;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  display: block;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+.seckill_mess .jiage {
+  width: 78%;
+  line-height: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  float: left;
+}
+.seckill_mess .jiage span {
+  font-size: 1.1rem;
+  color: #009646;
+}
+.seckill_mess .kuaidi {
+  width: 78%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+.seckill_mess .kuaidi i {
+  font-size: 0.6rem;
+  color: #B5B5B5;
+}
+.seckill_mess .shoucang {
+  width: 1.5rem;
+  height: 1.3rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+}
+.seckill_mess .shoucang img {
+  width: 1.5rem;
+  height: 1.3rem;
+}
+.seckill_mess .jieshu {
+  width: 50%;
+  height: 3.6rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+}
+.seckill_mess .jieshu .count_down {
+  text-align: right;
+}
+.seckill_mess .jieshu .sales_volume {
+  margin-top: 0 !important;
+}
+.seckill_mess .jieshu .sales_volume i {
+  float: right !important;
+}
+.seckill_mess .jieshu .sales_volume p {
+  float: right !important;
 }
 /*# sourceMappingURL=public.css.map */

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+	    <title>商铺列表</title>
+	    <!--初始化样式-->
+	    <link rel="stylesheet" href="../../css/reset.css" />
+	    <!--控件样式css-->
+	    <link rel="stylesheet" type="text/css" href="../../css/animate.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/swiper-3.4.2.min.css"/>
+	    <!--编辑样式css-->
+	    <link rel="stylesheet" type="text/css" href="../../css/shop.css"/>  
+	    <!--初始化 单位  rem-->
+	    <script src="../../js/reset.js"></script>	  
+	    <script src="../../js/jquery-1.8.3.min.js"></script>
+	    <script src="../../js/shop.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../../js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="background: #F5F5F5;">
+		<!--顶部搜索-->
+		<div class="shop-top">
+			<div class="shop-tbox">
+				<div class="shop-img">
+					<img src="../../img/shop_img.png" alt="顶部搜索图片" />
+				</div>
+				<!--搜索-->
+				<div class="shop-sosuo">
+					<form action="">
+						<div class="shop-so clearfix">
+							<span class="shop-submit"></span>
+							<input type="text" name="" id="" value="搜索本店商品"/>
+						</div>
+					</form>					
+				</div>
+				<!---->
+				<div class="shop-pos">
+					<div class="shop-zbox clearfix">
+						<!--商家LOGO-->
+						<div class="shop-shop">
+							<a href="shop-message.html">
+								<span class="shop-logo">
+									<img src="../../img/20170613174501sd.png" alt="LOGO" />
+								</span>
+								<em class="shop-name">店铺名称店铺名称店铺名称店铺名称店</em>
+							</a>
+						</div>
+						<table class="shop-right">
+							<tr>
+								<td	class="shop-fans shop-obox">
+									<span>9000<i></i></span>
+									<span class="m-t-12">粉丝数</span>
+								</td>
+								<td class="shop-collect shop-obox">
+									<i class="shop-sc shop-wsc"><input type="checkbox" /></i>
+									<span>收藏</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--滑动导航栏-->
+		<div class="shop-snav">
+			<ul>
+				<li class="shop-link">
+					<a href="#" class="shop-a">
+						<span>店铺首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop-all-list.html" class="shop-a">
+						<span>全部商品</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop-new-product.html" class="shop-a">
+						<span>店铺新品</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop-promotion.html" class="shop-a">
+						<span>店铺促销</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--nav导航栏-->
+		<div class="shop-nav">
+			<ul>
+				<li class="shop-link">
+					<a href="#" class="shop-a">
+						<i class="shop-si"></i>
+						<span>店铺首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop-all-list.html" class="shop-a">
+						<i class="shop-si"></i>
+						<span>全部商品</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop-new-product.html" class="shop-a">
+						<i class="shop-si"></i>
+						<span>店铺新品</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop-promotion.html" class="shop-a">
+						<i class="shop-si"></i>
+						<span>店铺促销</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--广告位-->
+		<div class="shop-banner m-t-20">
+			<div class="shop-wrap swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide shop-slide">
+			        	<a href="">
+			        		<img src="../../img/icon/shop20170822115052.png"/>
+			        	</a>
+			        </div>
+			        <div class="swiper-slide shop-slide">
+			        	<a href="">
+			        		<img src="../../img/home_cj.jpg"/>
+			        	</a>
+			        </div>
+			        <div class="swiper-slide shop-slide">
+			        	<a href="">
+			        		<img src="../../img/icon/shop20170822115052.png"/>
+			        	</a>
+			        </div>
+			    </div>
+			    <!---->
+			    <div class="shop-page"></div>
+		    </div>
+		</div>
+		<!--商品列表-->
+		<div class="shop-list m-t-20 p-b-88">
+			<h4 class="shop-ls-t">好货不停</h4>
+			<div class="shop-sli">
+				<ul class="clearfix">
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+										<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/20170613174501sd.png" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+										<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/20170613174501sd.png" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+										<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/bushui.jpg" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+					<li class="shop-li">
+						<a href="">
+							<span class="shop-img">
+								<img src="../../img/20170613174501sd.png" alt="商品图片" />
+							</span>
+							<div class="shop-gh">
+								Carneyroad卡尼路男包单肩斜挎包商务休闲牛津布包黑色大号CR-107
+							</div>
+							<span class="shop-rmb">
+								¥<i>199.00</i>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--tab-->
+		<div class="tabbar-section">
+			<ul>
+				<li class="tab-li w-w-50">
+					<a href="goods-category.html">
+						商品分类
+					</a>
+				</li>
+				<li class="tab-li w-w-50">
+					<a href="javascript:;">
+						联系卖家
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="up-load"></div>
+	</body>
+	<script type="text/javascript">
+		//广告位控件
+		$(function(){
+			 var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'horizontal',
+			    pagination: '.shop-page',
+			    loop: true,
+			    autoplay:3000,
+				paginationClickable: true,
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        spaceBetween: 0,
+		        hashnav: true,
+		        hashnavWatchState: true
+			    
+			  })        
+		})
+	</script>
+	<!--<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        hashnav: true,
+        hashnavWatchState: true
+    });
+    </script>-->
+</html>

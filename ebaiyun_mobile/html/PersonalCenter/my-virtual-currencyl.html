@@ -7,61 +7,132 @@
 		<meta content="black" name="apple-mobile-web-app-status-bar-style">
 		<meta content="telephone=no" name="format-detection">
 		<meta content="email=no" name="format-detection">
-		<title>我的佰云币</title>
+		<title>我的兑换券</title>
 		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/base1.css"/>
 		<script src="../../js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../js/reset.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/tooltip.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<div class="set-fixed">
-			<div class="set-up">
-				<div class="set-up-button" id="return_btn">
-					<span></span>
+		<div class="vg-pos">
+			<!--我的兑换券-->
+			<div class="">
+				<div class="teg">
+					<div class="teg-ral vg-bg-8ec63f">
+						<div class="">
+							<p class="vg-sp"><span class="vg-sap">使用规则</span></p>
+							<em class="vg-numbe m-t-39">0</em>
+							<!--直推会员数量-->
+							<p class="vg-sp m-t-39 vg-p-ft">第二板块直推会员（<i>0</i>位）</p>
+						</div>
+						<!---->
+					</div>
 				</div>
-				<h4 title="我的佰云币">我的佰云币</h4>
-			</div>
-		</div>
-		<!--积分-->
-		<div class="m-t-30">
-			<div class="teg">
-				<div class="teg-ral"  style="background-color: #009646;">
-					<div class="teg-itme">
-						<div class="teg-itme-l" style="width: 100%;">
-							<span>佰云币金额</span>
-							<b><strong style="margin-right: .7rem;">¥</strong>40000<i style="font-size: 1rem;">.00</i></b>
+				<!--兑换券-->
+				<div class="m-t-18 vg-teg">
+					<div class="vg-tog">
+						<h5 class="vg-h5">兑换券列表</h5>
+						<a href="javascript:;" class="vg-link">兑换记录</a>
+					</div>
+					<!--兑换券列表-->
+					<div class="vg-ul">
+						<table border="0" cellspacing="0" cellpadding="0" class="vg-table">
+							<tr>
+								<th>张数</th>
+								<th>总价值</th>
+								<th>单张价值</th>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>1000元</td>
+								<td>200元</td>							
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>2100元</td>
+								<td>210元</td>							
+							</tr>
+							<tr>
+								<td>30</td>
+								<td>6600元</td>
+								<td>220元</td>							
+							</tr>
+							<tr>
+								<td>50</td>
+								<td>11500元</td>
+								<td>230元</td>							
+							</tr>
+							<tr>
+								<td>100</td>
+								<td>24000元</td>
+								<td>240元</td>							
+							</tr>
+							<tr>
+								<td>200</td>
+								<td>50000元</td>
+								<td>250元</td>							
+							</tr>
+							<tr>
+								<td>300</td>
+								<td>100000元</td>
+								<td>334元</td>							
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--使用规则弹窗-->
+				<div class="vg-bg-z">
+					<div class="vg-bg-omg vg-bg-x">
+						<div class="vg-title">
+							<h4>兑换券奖金使用规则</h4>
+							<span class="vg-close vgb-close"></span>
+						</div>
+						<div class="vg-list">
+							<ul>
+								<li>1.直推1名第二板块会员，获得1张兑换券</li>
+								<li>2.每张兑换券只能使用一次</li>
+								<li>3.兑换商品已使用的兑换券则进行清零，未使用的兑换券可进行累计</li>
+								<li>4.兑换券累计的越多，兑换的奖品越丰厚</li>
+							</ul>
+						</div>
+						<div class="vg-margin">
+							<a href="javascript:;" class="vg-submit vga-close">我知道了</a>
 						</div>
 					</div>
-					<!---->
 				</div>
 			</div>
-			<!--积分详情-->
-			<div class="teg-pag m-t-18">
-				<h4>佰云币明细</h4>
-				<table border="0" cellspacing="0" cellpadding="0"
-					<tr>
-						<td>
-							<span class="font-28">获得佰云币</span>
-							<span>购物返佰云币</span>
-						</td>
-						<td align="right">
-							<span class="cl009646">+<i>200</i></span>
-							<span>2017/05/13 13:28</span>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="font-28">消耗佰云币</span>
-							<span>佰云币兑换商品</span>
-						</td>
-						<td align="right">
-							<span class="clf18e00">-<i>200</i></span>
-							<span>2017/05/13 13:28</span>
-						</td>
-					</tr>
-				</table>
+			<!--兑换详情-->
+			<div class="vg-obgbox" id="vg-obgbox">
+				<div class="vg-set">
+					<div class="set-up">
+						<div class="set-up-button" id="return_btn">
+							<span></span>
+						</div>
+						<h4 title="兑换记录">兑换记录</h4>
+					</div>
+				</div>
+				<!--兑换详情-->
+				<div class="vg-ogbx">
+					<!--兑换详情-->
+					<div class="teg-pag m-t-18">
+						<table border="0" cellspacing="0" cellpadding="0"
+							<tr>
+								<td>
+									<span class="font-28">商品兑换</span>
+									<span>兑换手机商品</span>
+								</td>
+								<td align="right">
+									<!--减兑换券张数-->
+									<span class="clf18e00">-<i>5</i>张</span>
+									<span>2017/05/13 13:28</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

@@ -19,7 +19,16 @@
 	</head>
 	<body style="background: #F5F5F5;">
 		<!--商品详情头部-->
-		<div class="commodity_head">
+		<div class="payment_head review_head">
+			<a href="javascript:;" class="head_ss" id="return_btn">
+				<img src="../../img/icon/return.png"/>
+			</a>
+			<h2>商品详情</h2>
+			<a href="" class="more">
+				<img src="../../img/icon/gend.png"/>
+			</a>
+		</div>
+		<!--<div class="commodity_head">
 			<a href="javascript:;" class="head_ss" id="return_btn">
 				<img src="../../img/icon/return.png"/>
 			</a>
@@ -45,7 +54,7 @@
 					<i><img src="../../img/icon/top_jt.png"/></i>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<!--详情商品图片-->
 		<div class="comm_banner" id="comm_banner">
 			<div class="swiper-container">
@@ -76,10 +85,8 @@
 				<li>连衣裙</li>
 			</ul>
 			<p class="jiage"><span>&yen;99.00<b>&yen;199.00</b></span></p>
-			<p class="kuaidi"><i>快递费:0.00</i><i>月销15497件</i></p>
-			<a href="" class="fenxiang">
-				<img src="../../img/icon/fenxiang.jpg" alt="" />
-				<em>分享</em>
+			<a href="javascript:;" class="fenxiang" style="padding-top: 0.2rem;">
+				<img src="../../img/icon/shoucang.png" alt="" />
 			</a>
 		</div>
 		<!--正品保障-->
@@ -91,12 +98,38 @@
 		</div>
 		<!--颜色尺码选择入口-->
 		<div class="comm_class" id="choice">
-			<span>颜色尺码选择</span>
-			<p style="">
-				<i>012红棕色</i>
-				<i>XL</i>
+			<span>选择</span>
+			<p>
+				<i>颜色分类</i>
+				<i>尺码</i>
 			</p>
 			<img src="../../img/icon/gengduo.png" alt="" />	
+		</div>
+		<!--店铺信息-->
+		<div class="comm_store">
+			<div class="stort_head">
+				<a href=""><img src="../../img/shop_img.jpg" alt="" /></a>
+				<p>某某店铺</p>
+			</div>
+			<ul>
+				<li>
+					<p>268</p>
+					<span>全部宝贝</span>
+				</li>
+				<li>
+					<p>32.5万</p>
+					<span>关注人数</span>
+				</li>
+				<li>
+					<span>商品描述<i>4.8</i></span>
+					<span>卖家服务<i>4.8</i></span>
+					<span>物流服务<i>4.8</i></span>
+				</li>
+			</ul>
+			<div class="stort_inlet">
+				<a href="">查看分类</a>
+				<a href="">进店逛逛</a>
+			</div>
 		</div>
 		<!--评论-->
 		<div class="comm_review" id="review">
@@ -149,18 +182,37 @@
 		<!--商品详情-->
 		<div class="commodity_details">
 			<div class="details_nav">
-				<a href="javascript:;" class="active">商品详情</a>
-				<a href="javascript:;">产品参数</a>
+				<a href="#shopping_mesg" class="active">商品详情</a>
+				<a href="#specification">产品参数</a>
 				<a href="javascript:;">售后服务</a>
 			</div>
 			<div class="details_nav_hide">
-				<a href="javascript:;" class="active">商品详情</a>
-				<a href="javascript:;">产品参数</a>
+				<a href="#shopping_mesg" class="active">商品详情</a>
+				<a href="#specification">产品参数</a>
 				<a href="javascript:;">售后服务</a>
 			</div>
 			<div class="details_main">
-				<img src="../../img/details_img.jpg" alt="" />
-				<img src="../../img/details_img.jpg" alt="" />
+				<div class="specification" id="specification">
+					<ul>
+						<li>
+							<p>规格</p>
+							<p>参数</p>
+						</li>
+						<li>
+							<p>规格</p>
+							<p>参数</p>
+						</li>
+						<li>
+							<p>规格</p>
+							<p>参数</p>
+						</li>
+					</ul>
+				</div>
+				<div class="shopping_mesg" id="shopping_mesg">
+					<img src="../../img/details_img.jpg" alt="" />
+					<img src="../../img/details_img.jpg" alt="" />
+				</div>
+					
 			</div>
 		</div>
 		
@@ -260,5 +312,16 @@
 			//console.log($(window).scrollTop())
 		})
 	})
+    
+    var _fx = true;
+    $(".fenxiang").click(function(){
+    	if(_fx){
+    		$(this).find("img").attr("src","../../img/icon/shoucang2.png");
+    	}else{
+    		$(this).find("img").attr("src","../../img/icon/shoucang.png");
+    	}
+    	_fx = !_fx
+    	//alert()
+    })
   </script>
 </html>

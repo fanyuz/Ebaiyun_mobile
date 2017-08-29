@@ -309,7 +309,10 @@
 					"img/icon/jiantou_sx.jpg",
 					"img/icon/jiant_x.jpg",
 					"html/shopping/shopping_car.html",
-					"html/shopping/commodity.html"
+					"html/shopping/commodity.html",
+					"img/icon/hyuidaodingbu.png",
+					"img/icon/icon_jt.png",
+					"img/youmeif.jpg"
 				],
 				"refer": [],
 				"priority": 0
@@ -393,7 +396,9 @@
 					"img/icon/xiaoxi.jpg",
 					"img/icon/shouc.jpg",
 					"img/icon/sousuo_comm.png",
-					"img/icon/close.jpg"
+					"img/icon/close.jpg",
+					"img/details_img.jpg",
+					"html/shopping/shoppingList.html"
 				],
 				"refer": [],
 				"priority": 0

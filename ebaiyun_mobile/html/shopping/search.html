@@ -15,12 +15,9 @@
 	    <!--脚本文件-->
 	    <script src="../../js/public.js"></script>
 	</head>
-	<body>
+	<body style="background: #F5F5F5;">
 		<!--顶部搜索-->
 		<div class="search_head">
-			<a href="" class="head_ss" id="return_btn">
-				<img src="../../img/icon/return.png"/>
-			</a>
 			<div class="head_search">
 				<img src="../../img/icon/fangdaj.png"/>
 				<input type="text" placeholder="苹果笔记本电脑"/>
@@ -30,8 +27,8 @@
 		</div>
 		<!--最近搜索-->
 		<div class="zj_search">
-			<h3>最近搜索</h3>
-			<div>
+			<h3>最近搜索<i class="remove_zj"><img src="../../img/icon/remove.png" alt="" /></i></h3>
+			<div class="zuijin">
 				<a href="">猫玩具</a>
 				<a href="">猫玩具</a>
 				<a href="">猫玩具</a>
@@ -44,7 +41,7 @@
 		<!--最近搜索-->
 		<div class="zj_search">
 			<h3>热门搜索</h3>
-			<div>
+			<div class="remen">
 				<a href="">猫玩具</a>
 				<a href="">猫玩具猫玩</a>
 				<a href="">猫玩具猫玩具</a>
@@ -56,4 +53,11 @@
 		</div>
 		
 	</body>
+	<script>
+		$(function(){
+			$(".remove_zj").click(function(){
+				$(".zuijin").html("");
+			})
+		})
+	</script>
 </html>

@@ -93,6 +93,7 @@
 						<li>
 							<a href="javascript:;" class="btn" id='demo2' data-options='{"type":"date","beginYear":1900,"endYear":2020}'>
 								<div class="set-up-itme clearfix">
+									<input type="hidden" id="inpus"/>
 									<div class="up-itme-size fl">
 										<span>出生日期</span>
 									</div>
@@ -179,6 +180,7 @@
 			(function($) {
 				$.init();
 				var result = $('#result')[0];
+				var inpus = $('#inpus')[0];
 				var btns = $('.btn');
 				btns.each(function(i, btn) {
 					btn.addEventListener('tap', function() {
@@ -202,6 +204,7 @@
 							 * rs.i 分（minutes 的第二个字母），用法同年
 							 */
 							result.innerText = rs.text;
+							inpus.value = rs.text;
 							/* 
 							 * 返回 false 可以阻止选择框的关闭
 							 * return false;

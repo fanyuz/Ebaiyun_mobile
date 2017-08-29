@@ -142,7 +142,6 @@ $(function(){
 			$(this).parent(".shopp_name").siblings("ol").find(":checkbox").removeAttr("checked");
 		}
 	})
-	
 	//全选按钮
 	$(".check_all").click(function(){
 		if($(this).attr("checked")){
@@ -157,7 +156,15 @@ $(function(){
 		if($(".car_shopping").find(":checkbox").attr("checked",true)){
 			$(".car_shopping").html("")
 		}
-		
+	})
+	//商品未选中提示框
+	$("#settle_accounts").click(function(){
+		if(!$(".shop_selected").is(":checked")){
+			$(".seckill_prompt").show();
+			setTimeout(function(){
+				$(".seckill_prompt").hide();
+			},2000)
+		}
 	})
 	
 	

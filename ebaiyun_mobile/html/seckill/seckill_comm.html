@@ -188,7 +188,7 @@
 				</a>
 			</div>
 			<a href="" class="add_car">加入购物车</a>
-			<a href="" class="promptly_buy">立即购买</a>
+			<a href="javascript:;" class="promptly_buy">立即购买</a>
 		</div>
 		<!--商品类型选择-->
 		<div class="shopping_choice">
@@ -234,6 +234,18 @@
 			</div>
 			<div class="verify">确定</div>
 		</div>
+		<!--退款申请弹窗-->
+		<div class="refund_background">
+			<div class="refund_main" style="height: 8rem;">
+				<div class="refund_way">
+					<p>请选择退款方式，24小时内为您退款</p>
+					<div class="way_list">
+						<a href="javascript:;">知道了</a>
+						<a href="javascript:;">升级会员</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>        
 	  var mySwiper = new Swiper ('.swiper-container', {
@@ -269,6 +281,13 @@
 		$(window).load(function(){
 			var _width = $(".sales_volume").find("p").attr("id") + "%";
 			$(".sales_volume").find("em").width(_width)
+		})
+		
+		$(".promptly_buy").click(function(){
+			$(".refund_background").show();
+		})
+		$(".way_list a:nth-child(1)").click(function(){
+			$(".refund_background").hide();
 		})
 	})
   </script>

@@ -1,0 +1,185 @@
+/*
+ * 我的兑换券
+ */
+.vg-bg-8ec63f{
+	background-color: #8ec63f;
+}
+.vg-sp{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+.vg-sap{
+	display: block;
+	color: #fff;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	padding: .2rem;
+	text-align: right;
+}
+.vg-p-ft{
+	font-size: 0.9rem;
+}
+.vg-teg{
+	background-color: #fff;
+}
+.vg-numbe{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+}
+.m-t-39{
+	margin-top: 1.3rem;
+}
+.vg-tog{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	padding: 0 1rem;
+	position: relative;
+}
+.vg-h5{
+	font-size: 0.9rem;
+	color: #333;
+	border-bottom: 1px solid #f5f5f5;
+	text-align: center;
+}
+.vg-link{
+	font-size: 0.8rem;
+	color: #999;
+	position: absolute;
+	right: 1rem;
+	top: 0;
+}
+.vg-ul{
+	padding:1rem;
+}
+.vg-ul li{
+	margin-top: 0.7rem;
+}
+.vg-libox{
+	border-radius:10px ;
+}
+.vg-table{
+	width: 100%;
+}
+.vg-table tr th{
+	text-align: center;
+	vertical-align: middle;
+	font-size: .8rem;
+	color: #999;
+	height: 1.5rem;
+	border: 1px solid #f5f5f5;
+}
+.vg-table tr td{
+	text-align: center;
+	vertical-align: middle;
+	font-size: .8rem;
+	color: #999;
+	height: 1.5rem;
+	border: 1px solid #f5f5f5;
+}
+/*
+ * 弹窗
+ */
+.vg-bg-z{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,.3);
+	display: none;
+}
+.vg-bg-omg{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.vg-bg-x{
+	width: 92%;
+	height: 16rem;
+	background-color: #fff;
+	border-radius: .2rem;
+}
+.vg-title{
+	width: 100%;
+	position: relative;
+}
+.vg-title h4{
+	width: 100%;
+	height: 2.9rem;
+	line-height: 2.9rem;
+	font-size: .8rem;
+	color: #999;
+	text-align: center;
+	border-bottom: 1px solid #f5f5f5;
+}
+.vg-close{
+	display: block;
+	width: 0.9rem;
+	height: 0.9rem;
+	background: url(../img/vg_close.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -.45rem;
+	right: 1rem;
+}
+.vg-list{
+	padding:1rem;
+}
+.vg-list ul li{
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	color: #333;
+}
+.vg-margin{
+	text-align: center;
+	margin-top: .6rem;
+}
+.vg-submit{
+	display: inline-block;
+	color: #999;
+	font-size: 0.9rem;
+	padding: .3rem .6rem;
+	border: 1px solid #ccc;
+	border-radius: .2rem;
+	
+}
+.vg-pos{
+	position: relative;
+	width:100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	min-height: 100%;	
+}
+.vg-obgbox{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: -100%;
+	height: 100vh;
+	overflow-y: auto;
+	z-index: 999;
+	background-color: #f5f5f5;
+	-webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -moz-transition: transform .4s,-moz-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,-webkit-transform .4s,-moz-transform .4s;
+}
+.vg-set{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.vg-ogbx{
+	margin-top: 3rem;
+}

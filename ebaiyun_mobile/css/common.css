@@ -1,0 +1,11 @@
+/*
+ * 按钮 编辑样式class不能用作于js事件；
+ */
+.submit-button{
+	display: block;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    -webkit-border-radius: .2rem;
+    border-radius: .2rem;
+    text-align: center;	
+}
